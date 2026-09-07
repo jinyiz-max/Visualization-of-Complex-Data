@@ -76,7 +76,7 @@ except Exception as error:
 
 
 st.title("🐧 Palmer Penguins: Comparing Visual Encodings")#主标题
-st.caption("DATS 6401 — Week 2: Grammar of Graphics & Design Principles")#说明文字
+st.caption("DATS 6401 — Week 2: Grammar of Graphics & Design Principles by Jinyi zhou")#说明文字
 
 st.markdown(
     """
