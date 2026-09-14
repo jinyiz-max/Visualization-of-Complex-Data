@@ -144,7 +144,7 @@ category_cols = df.select_dtypes(exclude=np.number).columns.tolist()#类别特�
 st.title("Week3_hw: Wheat Seed Measurements: Correlation and PCA")
 st.caption(
     f"{len(df)} observations · {len(numeric_cols)} numeric variables · "
-    "UCI Seeds dataset"
+    "UCI Seeds dataset by Jinyi Zhou"
 )
 #control 控制框的属性
 with st.sidebar:
