@@ -1,9 +1,5 @@
 """Week 4 — Time series: trend, seasonality, uncertainty and animation.
 Run: python -m streamlit run week4_app.py
-Install: python -m pip install 'streamlit>=1.50,<2' 'altair>=5,<7' pandas numpy matplotlib statsmodels
-Data embedded from R datasets::AirPassengers (144 monthly totals, thousands).
-Animation adapted from the instructor's app_rolling_animation.py; resolution
-control extends app_resolution_starter.py. No network access needed at runtime.
 """
 import calendar
 import altair as alt
