@@ -141,7 +141,7 @@ df = load_data()
 numeric_cols = df.select_dtypes(include=np.number).columns.tolist() #数字特征
 category_cols = df.select_dtypes(exclude=np.number).columns.tolist()#类别特征
 
-st.title("Week3_hw: Wheat Seed Measurements: Correlation and PCA")
+st.title("Week5_hw, change from Week3_hw: Wheat Seed Measurements: Correlation and PCA")
 st.caption(
     f"{len(df)} observations · {len(numeric_cols)} numeric variables · "
     "UCI Seeds dataset"
