@@ -19,7 +19,7 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
 
-st.set_page_config(page_title="Week 3: Multivariate Data", layout="wide")
+st.set_page_config(page_title="Week 5: Building Interactive Apps with Streamlit", layout="wide")
 
 HEATMAP_INTERPRETATION = """
 ### Interpretation
@@ -147,6 +147,7 @@ st.caption(
     "UCI Seeds dataset"
 )
 #control 控制框的属性
+
 with st.sidebar:
     st.header("Chart Controls")
 
@@ -189,6 +190,13 @@ with st.expander("Preview the dataset and assignment variables"):
     st.write("Numeric variables:", numeric_cols)
     st.write("PCA color category:", pca_color_by)
     st.write("Pairwise color category:", pairwise_color_by)
+    csv_bytes = df.to_csv(index=False).encode("utf-8")
+    st.download_button(
+        "Download filtered data as CSV",
+        data=csv_bytes,
+        file_name="filtered_wheat_seeds.csv",
+        mime="text/csv",
+    )
 
 
 tab1, tab2 = st.tabs(["Correlation Heatmap", "PCA Projection"])
@@ -408,6 +416,7 @@ st.subheader("What does each view miss?")
 st.markdown(PAIRWISE_COMPARISON_TEXT)
 
 st.divider()
+st.subheader("About")
 st.caption(
     "Data source: UCI Machine Learning Repository — Seeds dataset. "
     "The numeric variables were standardized before PCA."
