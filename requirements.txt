@@ -5,3 +5,6 @@ altair
 scikit-learn
 matplotlib
 statsmodels
+networkx
+seaborn
+pyvis
