@@ -8,4 +8,6 @@ statsmodels
 networkx
 seaborn
 pyvis
-umap
+bertopic
+sentence-transformers
+umap-learn
