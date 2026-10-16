@@ -8,3 +8,4 @@ statsmodels
 networkx
 seaborn
 pyvis
+umap
