@@ -11,3 +11,7 @@ pyvis
 bertopic
 sentence-transformers
 umap-learn
+numpy
+pydeck
+requests
+openpyxl
