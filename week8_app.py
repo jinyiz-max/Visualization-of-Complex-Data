@@ -153,6 +153,7 @@ with tab_montage:#展示同类图片
     st.write("The montage reveals within-class variation in color, texture, and spatial layout. The category stays the same even when the visible scene patterns differ.")
     fig = make_montage(paths_by_class[selected_class], montage_n, DISPLAY[selected_class])
     st.pyplot(fig, use_container_width=False)
+    #展示对应数量的图片，只展示data里面的前n张图片，不会变
     plt.close(fig)
     pick = st.selectbox(
         "Inspect an image",
