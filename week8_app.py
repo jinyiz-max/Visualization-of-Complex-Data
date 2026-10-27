@@ -154,6 +154,16 @@ with tab_montage:#展示同类图片
     fig = make_montage(paths_by_class[selected_class], montage_n, DISPLAY[selected_class])
     st.pyplot(fig, use_container_width=False)
     plt.close(fig)
+    pick = st.selectbox(
+        "Inspect an image",
+        paths_by_class[selected_class][:min(300, counts[selected_class])],
+        format_func=lambda p: Path(p).stem
+    )
+    st.image(
+        read_rgb(pick),
+        caption=f"{DISPLAY[selected_class]} · {Path(pick).stem}",
+        width=320
+    )
 
 with tab_structure:#分析RGB通道和亮度
     st.subheader("Structural visualization: RGB channels and intensity")
