@@ -16,3 +16,6 @@ pydeck
 requests
 openpyxl
 Pillow
+geopandas
+shapely
+pyproj
